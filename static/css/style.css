@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 :root {
-     --fonteprincipal: 'Arial';
+     --fonteprincipal: 'Arial', 'sans-serif';
      --cor01: #3aff09;
      --cor02: #2fd705;
      --cor03: #29a909;
      --cor04: #1b6a07;
      --cor05: #0e3903;
-     --cor-fundo: #d4fbd4;
-     --cor-botao: #4CAF50;
-     --cor-botao-hover: #45a049;
+     --cor-fundo: #cdffcd;
+     --cor-botao: #2e6123;
+     --cor-botao-hover: #9bffa0;
      --cor-texto: #0a4504;
      --cor-texto-botao: #f7ffe6;
  }
@@ -23,10 +23,38 @@
  }
  header {
      height: 150px;
-     background-image: linear-gradient(to bottom, var(--cor03), var(--cor02), var(--cor01));
-     padding: 10px;
+     background-image: linear-gradient(to top, var(--cor03), var(--cor02), var(--cor01));
+     padding: 12px;
      margin: auto;
- }   
+     border-top-right-radius: 12px;
+     border-top-left-radius: 12px;
+ }
+ 
+ nav {
+    background-color: var(--cor-botao);
+    color: var(--cor-texto-botao);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+ }
+ 
+ nav > button {
+    background-color: var(--cor-botao);
+    color: var(--cor02);
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+ }
+
+ nav > button:hover {
+    background-color: var(--cor-botao-hover);
+    color: var(--cor05);
+ }  
 
  main {
 
