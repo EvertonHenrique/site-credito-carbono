@@ -12,6 +12,7 @@
      --cor-botao-hover: #9bffa0;
      --cor-texto: #0a4504;
      --cor-texto-botao: #f7ffe6;
+     --cor-rodape: #485545;
  }
  
  body {
@@ -19,6 +20,7 @@
      background-color: var(--cor-fundo);
      color: var(--cor-texto);
      text-align: justify;
+     margin: auto;
     
  }
  header {
@@ -61,6 +63,15 @@
  }
 
  footer {
+     background-color: var(--cor-rodape);
+     padding: auto;
+     margin: auto;
+     color: lightgreen;
      
-     
+ }
+
+ footer p {
+     text-align: center;
+     font-size: 14px;
+     margin: 12px;
  }
