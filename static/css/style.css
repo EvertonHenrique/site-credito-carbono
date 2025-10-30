@@ -14,52 +14,70 @@
      --cor-texto-botao: #f7ffe6;
      --cor-rodape: #485545;
  }
+
+ * {
+   font-family: var(--fonteprincipal);
+ }
  
  body {
-     font-family: var(--fonteprincipal);
      background-color: var(--cor-fundo);
      color: var(--cor-texto);
      text-align: justify;
      margin: auto;
-    
  }
  header {
-     height: 150px;
-     background-image: linear-gradient(to top, var(--cor03), var(--cor02), var(--cor01));
-     padding: 12px;
+     height: 75px;
+     background-image: linear-gradient(to top, var(--cor02), var(--cor04));
+     padding-top: 10px;
      margin: auto;
-     border-top-right-radius: 12px;
-     border-top-left-radius: 12px;
+     text-align: center;
+     
+ }
+
+ header h1 {
+     font-size: 32px;
+     color: #77fb7c;
+     text-shadow: 2px 2px 4px #000000;
  }
  
  nav {
+    font-weight: bold;
+    display: inline-block;
     background-color: var(--cor-botao);
     color: var(--cor-texto-botao);
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-transform: capitalize;
  }
  
  nav > button {
+   
     background-color: var(--cor-botao);
     color: var(--cor02);
-    border-radius: 15px;
+    border-radius: 12px;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: underline;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 6px 4px solid var(--cor-fundo);
+    transition-duration: 0.5s;
     cursor: pointer;
     
  }
-
+ 
  nav > button:hover {
     background-color: var(--cor-botao-hover);
     color: var(--cor05);
  }  
 
  main {
-
+   max-width: 500px;
+   background-color: white;
+   color: forestgreen;
+   margin: auto;
  }
 
  footer {
