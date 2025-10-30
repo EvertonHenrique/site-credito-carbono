@@ -51,17 +51,15 @@
  }
  
  nav > button {
-   
-    background-color: var(--cor-botao);
+    font-weight: bold;
+    font-size: 12px;    background-color: var(--cor-botao);
     color: var(--cor02);
     border-radius: 12px;
     padding: 10px 20px;
     text-align: left;
     text-decoration: none;
-    text-indent: 10px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+    font-size: 12px;
+    display: inline-block;
     margin: 6px 4px solid var(--cor-fundo);
     transition-duration: 0.5s;
     cursor: pointer;
@@ -72,6 +70,14 @@
     background-color: var(--cor-botao-hover);
     color: var(--cor05);
  }  
+
+ button a {
+    height: 10px;
+    text-decoration: none;
+    color: inherit;
+    align-items: normal;
+    display: inline-block;
+ }
 
  main {
    max-width: 500px;
