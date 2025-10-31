@@ -56,11 +56,9 @@
     color: var(--cor02);
     border-radius: 12px;
     padding: 10px 20px;
-    text-align: left;
     text-decoration: none;
     font-size: 12px;
     display: inline-block;
-    margin: 6px 4px solid var(--cor-fundo);
     transition-duration: 0.5s;
     cursor: pointer;
     
@@ -84,6 +82,14 @@
    background-color: white;
    color: forestgreen;
    margin: auto;
+ }
+
+ div#creditos {
+    padding: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    max-width: 70%;
+    min-width: 80%;
  }
 
  footer {
